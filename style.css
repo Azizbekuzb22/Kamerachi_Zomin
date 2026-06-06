@@ -1678,6 +1678,11 @@ ul, ol {
 
 /* Mobile */
 @media (max-width: 768px) {
+  .loader-logo {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
   .nav-links {
     display: none;
   }
@@ -1801,6 +1806,11 @@ ul, ol {
 
 /* Small mobile */
 @media (max-width: 480px) {
+  .loader-logo {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
   .stats-grid {
     grid-template-columns: 1fr;
   }
