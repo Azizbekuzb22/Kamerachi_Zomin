@@ -1,3 +1,19 @@
+node_modules/
+.next/
+dist/
+out/
+backup_nextjs/
+.DS_Store
+.env
+.vscode/
+package-lock.json
+yarn.lock
+npm-debug.log
+*.log
+.eslintcache
+.parcel-cache/
+coverage/
+Thumbs.db
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
