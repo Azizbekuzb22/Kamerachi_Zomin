@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================
      4. NAVBAR ACTIVE LINK HIGHLIGHTING
   ========================================================== */
-  const sectionIds = ['hero', 'xizmatlar', 'tariflar', 'statistika', 'mahsulotlar', 'biz-haqimizda', 'aloqa'];
+  const sectionIds = ['hero', 'xizmatlar', 'jarayon', 'statistika', 'mahsulotlar', 'biz-haqimizda', 'aloqa'];
   const navLinks   = qsa('.nav-links a');
 
   function highlightActiveLink() {
@@ -470,17 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ========================================================== */
   // Barcha mantiq 3-bandda amalga oshirilgan
 
-  /* ==========================================================
-     PERFORMANCE — Page Visibility API
-     Sahifa ko'rinmas bo'lganda intervallarni to'xtatish
-  ========================================================== */
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-      stopAutoSlide();
-    } else {
-      startAutoSlide();
-    }
-  });
+  // Page Visibility API handles are no longer needed since the auto-sliding testimonials carousel was removed.
 
   /* ----------------------------------------------------------
      Dastlabki holatni ishga tushirish
