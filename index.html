@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>KAMERACHI_ZOMIN | Professional CCTV & Xavfsizlik Tizimlari - Zomin</title>
+    <meta name="description" content="KAMERACHI_ZOMIN - Zominda professional Hikvision CCTV kamera, domofon va xavfsizlik tizimlarini o'rnatish xizmati. 500+ o'rnatilgan kameralar, 300+ mamnun mijozlar.">
+    <meta name="keywords" content="CCTV kamera, Hikvision, xavfsizlik kamera, domofon, video kuzatuv, Zomin, kamera o'rnatish, xavfsizlik tizimi">
+    <meta name="author" content="KAMERACHI_ZOMIN">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kamerachi-zomin.uz">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KAMERACHI_ZOMIN | Professional CCTV & Xavfsizlik Tizimlari">
+    <meta property="og:description" content="Zominda professional Hikvision CCTV kamera, domofon va xavfsizlik tizimlarini o'rnatish xizmati.">
+    <meta property="og:url" content="https://kamerachi-zomin.uz">
+    <meta property="og:locale" content="uz_UZ">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📹</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-rec">
+                <span class="rec-dot"></span>
+                REC
+            </div>
+            <div class="loader-logo">
+                <span>KAMERACHI_</span>ZOMIN
+            </div>
+            <p class="loader-tagline">Xavfsizlik Tizimlari</p>
+            <div class="loader-bar">
+                <div class="loader-bar-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== SCROLL PROGRESS ==================== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ==================== SECURITY GRID OVERLAY ==================== -->
+    <div id="security-grid">
+        <div class="scan-line"></div>
+    </div>
+
+    <!-- ==================== MOUSE LIGHT ==================== -->
+    <div id="mouse-light"></div>
+
+    <!-- ==================== PARTICLE CANVAS ==================== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav id="navbar">
+        <div class="navbar-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="red">KAMERACHI_</span>ZOMIN
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Bosh sahifa</a></li>
+                <li><a href="#xizmatlar">Xizmatlar</a></li>
+                <li><a href="#tariflar">Tariflar</a></li>
+                <li><a href="#mahsulotlar">Mahsulotlar</a></li>
+                <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
+                <li><a href="#aloqa">Aloqa</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Menyu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#hero">Bosh sahifa</a>
+            <a href="#xizmatlar">Xizmatlar</a>
+            <a href="#tariflar">Tariflar</a>
+            <a href="#statistika">Statistika</a>
+            <a href="#mahsulotlar">Mahsulotlar</a>
+            <a href="#biz-haqimizda">Biz haqimizda</a>
+            <a href="#aloqa">Aloqa</a>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-vignette"></div>
+
+        <!-- Floating Security Icons -->
+        <div class="floating-icon fi-1"><i data-lucide="camera" width="32" height="32"></i></div>
+        <div class="floating-icon fi-2"><i data-lucide="shield" width="28" height="28"></i></div>
+        <div class="floating-icon fi-3"><i data-lucide="lock" width="26" height="26"></i></div>
+        <div class="floating-icon fi-4"><i data-lucide="eye" width="30" height="30"></i></div>
+        <div class="floating-icon fi-5"><i data-lucide="wifi" width="24" height="24"></i></div>
+        <div class="floating-icon fi-6"><i data-lucide="scan-eye" width="28" height="28"></i></div>
+
+        <!-- REC Indicator -->
+        <div class="hero-rec">
+            <span class="rec-dot"></span>
+            REC
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                Hikvision Rasmiy Hamkor
+            </div>
+
+            <h1 class="hero-title">
+                <span class="highlight">Xavfsizligingiz</span> Bizning Ustuvorligimiz
+            </h1>
+
+            <p class="hero-subtitle">
+                Hikvision kamera, domofon va professional xavfsizlik tizimlari — Zomin shahrida ishonchli xavfsizlik yechimlari
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#aloqa" class="btn btn-primary btn-neon">
+                    <i data-lucide="phone" width="18" height="18"></i>
+                    Bog'lanish
+                </a>
+                <a href="#xizmatlar" class="btn btn-outline">
+                    <i data-lucide="layers" width="18" height="18"></i>
+                    Xizmatlar
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <span>Pastga suring</span>
+            <div class="chevron">
+                <i data-lucide="chevrons-down" width="24" height="24"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICES SECTION ==================== -->
+    <section id="xizmatlar" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Bizning <span class="red">Xizmatlarimiz</span></h2>
+                <div class="accent-line"></div>
+                <p>Professional xavfsizlik yechimlari — zamonaviy texnologiyalar bilan</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card reveal delay-1">
+                    <div class="service-icon">
+                        <i data-lucide="camera" width="28" height="28"></i>
+                    </div>
+                    <h3>CCTV Kamera O'rnatish</h3>
+                    <p>Hikvision brendining eng zamonaviy kameralarini professional tarzda o'rnatamiz. HD, Full HD va 4K sifatli tasvirlar bilan to'liq xavfsizlik.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card reveal delay-2">
+                    <div class="service-icon">
+                        <i data-lucide="monitor" width="28" height="28"></i>
+                    </div>
+                    <h3>Video Kuzatuv Tizimlari</h3>
+                    <p>To'liq video kuzatuv tizimlarini loyihalash, o'rnatish va sozlash. DVR/NVR registratorlar bilan professional monitoring.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card reveal delay-3">
+                    <div class="service-icon">
+                        <i data-lucide="home" width="28" height="28"></i>
+                    </div>
+                    <h3>Smart Home Xavfsizlik</h3>
+                    <p>Aqlli uy xavfsizlik tizimlari. Telefoningizdan masofaviy boshqarish va kuzatish imkoniyati — istalgan joydan nazorat.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card reveal delay-4">
+                    <div class="service-icon">
+                        <i data-lucide="door-open" width="28" height="28"></i>
+                    </div>
+                    <h3>Domofon O'rnatish</h3>
+                    <p>Zamonaviy video domofonlar o'rnatish. Mehmonlarni eshik oldidan ko'ring va gaplashing — xavfsiz va qulay.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card reveal delay-5">
+                    <div class="service-icon">
+                        <i data-lucide="wifi" width="28" height="28"></i>
+                    </div>
+                    <h3>Masofaviy Monitoring</h3>
+                    <p>Dunyoning istalgan nuqtasidan real vaqtda kuzatish. Mobil ilova orqali 24/7 nazorat — telefoningizda to'liq boshqaruv.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card reveal delay-6">
+                    <div class="service-icon">
+                        <i data-lucide="wrench" width="28" height="28"></i>
+                    </div>
+                    <h3>Texnik Xizmat</h3>
+                    <p>Muntazam texnik xizmat ko'rsatish va tizimlarni yangilash. Kafolat xizmati va professional qo'llab-quvvatlash.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TAYYOR TARIFLAR VA TO'PLAMLAR ==================== -->
+    <section id="tariflar" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Tayyor <span class="red">Tariflar va To'plamlar</span></h2>
+                <div class="accent-line"></div>
+                <p>Ehtiyojingizga mos keladigan to'liq xavfsizlik to'plamini tanlang. Barcha tariflarga bepul konsultatsiya, o'rnatish va sozlash kiradi.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Card 1: Boshlang'ich (Basic) -->
+                <div class="pricing-card reveal delay-1">
+                    <div class="pricing-badge">Boshlang'ich</div>
+                    <div class="pricing-header">
+                        <h3>Kichik Obyektlar</h3>
+                        <p class="pricing-subtitle">Hovli, kichik do'kon yoki ofis uchun</p>
+                        <div class="price-value">
+                            <span class="price-num">2</span> <span class="price-unit">ta kamera</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="check-icon"></i> 2x Hikvision Full HD kameralar</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x DVR registrator (4 kanalli)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x HDD (saqlash xotirasi 500GB)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Masofaviy telefonda kuzatish</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Montaj va to'liq sozlash xizmati</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1 yillik kafolat</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#aloqa" class="btn btn-outline btn-full">Buyurtma Berish</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Standart (Standard - Popular) -->
+                <div class="pricing-card pricing-popular reveal delay-2">
+                    <div class="pricing-badge popular">Eng Ommabop</div>
+                    <div class="pricing-header">
+                        <h3>O'rta Obyektlar</h3>
+                        <p class="pricing-subtitle">Katta xonadonlar, kottejlar va do'konlar uchun</p>
+                        <div class="price-value">
+                            <span class="price-num">4</span> <span class="price-unit">ta kamera</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="check-icon"></i> 4x Hikvision Full HD IP kameralar</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x NVR registrator (4 kanalli)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x HDD (saqlash xotirasi 1TB - 15 kun)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Kecha-kunduz rangli ko'rish (ColorVu)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Telefonda masofaviy monitoring (24/7)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Montaj, kabellar va sozlash kiradi</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 2 yillik rasmiy kafolat</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#aloqa" class="btn btn-primary btn-neon btn-full">Buyurtma Berish</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Premium (Business) -->
+                <div class="pricing-card reveal delay-3">
+                    <div class="pricing-badge">Professional</div>
+                    <div class="pricing-header">
+                        <h3>Katta Obyektlar</h3>
+                        <p class="pricing-subtitle">Katta omborxonalar, ofislar va ishlab chiqarish uchun</p>
+                        <div class="price-value">
+                            <span class="price-num">8</span> <span class="price-unit">ta kamera</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i data-lucide="check" class="check-icon"></i> 8x Hikvision 4K IP kameralar</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x NVR registrator (8 kanalli PoE)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 1x HDD (saqlash xotirasi 2TB - 20 kun)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Smart Analitika (yuz aniqlash, chiziq kesish)</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Ovoz yozish va masofaviy suhbat</li>
+                        <li><i data-lucide="check" class="check-icon"></i> Montaj, materiallar va to'liq sozlash</li>
+                        <li><i data-lucide="check" class="check-icon"></i> 2 yillik kafolat + 6 oy bepul texnik yordam</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <a href="#aloqa" class="btn btn-outline btn-full">Buyurtma Berish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATISTICS SECTION ==================== -->
+    <section id="statistika" class="section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item reveal delay-1">
+                    <div class="stat-icon">
+                        <i data-lucide="camera" width="36" height="36"></i>
+                    </div>
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">O'rnatilgan Kameralar</div>
+                </div>
+
+                <div class="stat-item reveal delay-2">
+                    <div class="stat-icon">
+                        <i data-lucide="users" width="36" height="36"></i>
+                    </div>
+                    <div class="stat-number" data-target="300">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Mamnun Mijozlar</div>
+                </div>
+
+                <div class="stat-item reveal delay-3">
+                    <div class="stat-icon">
+                        <i data-lucide="award" width="36" height="36"></i>
+                    </div>
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-suffix">+</div>
+                    <div class="stat-label">Yillik Tajriba</div>
+                </div>
+
+                <div class="stat-item reveal delay-4">
+                    <div class="stat-icon">
+                        <i data-lucide="headphones" width="36" height="36"></i>
+                    </div>
+                    <div class="stat-number static-stat">24/7</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Qo'llab-quvvatlash</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MAHSULOTLAR GALEREYASI ==================== -->
+    <section id="mahsulotlar" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Bizning <span class="red">Mahsulotlarimiz</span></h2>
+                <div class="accent-line"></div>
+                <p>Hikvision brendining zamonaviy xavfsizlik tizimlari va uskunalari</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item gallery-item-large reveal delay-1">
+                    <img src="images/dome-camera.png" alt="Hikvision dome CCTV kamera" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Dome Kameralar</h3>
+                        <p>Ichki va tashqi muhit uchun IR yoritgichli dome kameralar</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item reveal delay-2">
+                    <img src="images/bullet-camera.png" alt="Hikvision bullet kamera" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Bullet Kameralar</h3>
+                        <p>Uzoq masofali tungi ko'rish imkoniyatli kameralar</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item reveal delay-3">
+                    <img src="images/remote-monitoring.png" alt="Masofaviy monitoring ilova" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Masofaviy Monitoring</h3>
+                        <p>Telefoningizdan 24/7 real vaqtda kuzatish</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item reveal delay-4">
+                    <img src="images/domofon.png" alt="Video domofon tizimi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Video Domofonlar</h3>
+                        <p>Zamonaviy video domofon va interkom tizimlari</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item gallery-item-large reveal delay-5">
+                    <img src="images/monitoring-room.png" alt="Video kuzatuv xonasi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Monitoring Markazlari</h3>
+                        <p>Professional video kuzatuv markazlarini loyihalash va jihozlash</p>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item reveal delay-6">
+                    <img src="images/nvr-system.png" alt="NVR registrator tizimi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>NVR/DVR Registratorlar</h3>
+                        <p>Yuqori sifatli video yozish va saqlash tizimlari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US SECTION ==================== -->
+    <section id="biz-haqimizda" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Nega Aynan <span class="red">Biz?</span></h2>
+                <div class="accent-line"></div>
+                <p>Bizni tanlashingiz uchun sabablar</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card reveal-left delay-1">
+                    <div class="why-icon">
+                        <i data-lucide="award" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h3>Sertifikatlangan Mutaxassislar</h3>
+                        <p>Barcha mutaxassislarimiz Hikvision sertifikatiga ega. Yuqori malakali va tajribali jamoa.</p>
+                    </div>
+                </div>
+
+                <div class="why-card reveal-left delay-2">
+                    <div class="why-icon">
+                        <i data-lucide="shield-check" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h3>Original Hikvision Mahsulotlar</h3>
+                        <p>Faqat original va kafolatli mahsulotlar bilan ishlaymiz. Sifatga 100% kafolat beramiz.</p>
+                    </div>
+                </div>
+
+                <div class="why-card reveal-left delay-3">
+                    <div class="why-icon">
+                        <i data-lucide="zap" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h3>Tez O'rnatish</h3>
+                        <p>Buyurtma berganingizdan 24 soat ichida o'rnatamiz. Tezkor va sifatli xizmat kafolati.</p>
+                    </div>
+                </div>
+
+                <div class="why-card reveal-left delay-4">
+                    <div class="why-icon">
+                        <i data-lucide="file-check" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h3>Kafolat Xizmati</h3>
+                        <p>2 yillik kafolat va bepul texnik xizmat ko'rsatish. Muammolarni tez hal qilamiz.</p>
+                    </div>
+                </div>
+
+                <div class="why-card reveal-left delay-5">
+                    <div class="why-icon">
+                        <i data-lucide="badge-dollar-sign" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h3>Hamyonbop Narxlar</h3>
+                        <p>Eng yaxshi sifat, eng qulay narxlarda. Moslashuvchan to'lov sharoitlari mavjud.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="aloqa" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Biz Bilan <span class="red">Bog'laning</span></h2>
+                <div class="accent-line"></div>
+                <p>Bepul konsultatsiya va narxlar haqida ma'lumot oling</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="reveal-left">
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="contact-name">Ismingiz</label>
+                            <input type="text" id="contact-name" name="name" placeholder="To'liq ismingizni kiriting" required>
+                            <span class="form-error" id="name-error">Iltimos, ismingizni kiriting (kamida 2 harf)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-phone">Telefon raqamingiz</label>
+                            <input type="tel" id="contact-phone" name="phone" placeholder="+998 XX XXX XX XX" required>
+                            <span class="form-error" id="phone-error">Iltimos, to'g'ri telefon raqam kiriting</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">Xabaringiz</label>
+                            <textarea id="contact-message" name="message" placeholder="Qanday xizmat kerak? Batafsil yozing..." rows="5" required></textarea>
+                            <span class="form-error" id="message-error">Iltimos, xabaringizni kiriting (kamida 10 harf)</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-neon" id="submit-btn">
+                            <i data-lucide="send" width="18" height="18"></i>
+                            Xabar Yuborish
+                        </button>
+
+                        <div class="form-success" id="form-success">
+                            ✅ Xabaringiz muvaffaqiyatli yuborildi! Tez orada siz bilan bog'lanamiz.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="reveal-right">
+                    <div class="contact-info">
+                        <div class="contact-info-card">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="building-2" width="22" height="22"></i>
+                                </div>
+                                <div>
+                                    <h4>Kompaniya</h4>
+                                    <p>KAMERACHI_ZOMIN</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="map-pin" width="22" height="22"></i>
+                                </div>
+                                <div>
+                                    <h4>Manzil</h4>
+                                    <p>Zomin, Jizzax viloyati, O'zbekiston</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="phone" width="22" height="22"></i>
+                                </div>
+                                <div>
+                                    <h4>Telefon</h4>
+                                    <a href="tel:+998994117025">+998 99 411 70 25</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="send" width="22" height="22"></i>
+                                </div>
+                                <div>
+                                    <h4>Telegram</h4>
+                                    <a href="https://t.me/samandar_villain" target="_blank" rel="noopener">@samandar_villain</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i data-lucide="clock" width="22" height="22"></i>
+                                </div>
+                                <div>
+                                    <h4>Ish vaqti</h4>
+                                    <p>Dushanba — Shanba, 09:00 — 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Map -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24471.86684044!2d68.3936!3d39.9545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ebdcc4b4b9c5d%3A0x3ab8ccb8c0d7e8ab!2sZomin%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1"
+                                width="100%"
+                                height="250"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="KAMERACHI_ZOMIN joylashuvi"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="nav-logo">
+                    <span class="red">KAMERACHI_</span>ZOMIN
+                </div>
+                <p>Zominda professional xavfsizlik tizimlari va CCTV kamera o'rnatish bo'yicha yetakchi kompaniya. Hikvision rasmiy hamkori.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Tezkor Havolalar</h4>
+                <ul>
+                    <li><a href="#hero">Bosh sahifa</a></li>
+                    <li><a href="#xizmatlar">Xizmatlar</a></li>
+                    <li><a href="#tariflar">Tariflar</a></li>
+                    <li><a href="#biz-haqimizda">Biz haqimizda</a></li>
+                    <li><a href="#aloqa">Aloqa</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-links">
+                <h4>Aloqa</h4>
+                <ul>
+                    <li>
+                        <a href="tel:+998994117025">
+                            📞 +998 99 411 70 25
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/samandar_villain" target="_blank" rel="noopener">
+                            ✈️ @samandar_villain
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/kamerachi_zomin" target="_blank" rel="noopener">
+                            📷 @kamerachi_zomin
+                        </a>
+                    </li>
+                    <li>📍 Zomin, Jizzax viloyati</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 KAMERACHI_ZOMIN. Barcha huquqlar himoyalangan.</p>
+            <p>Hikvision rasmiy hamkori</p>
+        </div>
+    </footer>
+
+    <!-- ==================== FLOATING BUTTONS ==================== -->
+    <div id="floating-buttons">
+        <a href="https://www.instagram.com/kamerachi_zomin" target="_blank" rel="noopener" class="float-btn instagram" aria-label="Instagram orqali bog'lanish">
+            <span class="tooltip">Instagram</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+        </a>
+        <a href="https://t.me/samandar_villain" target="_blank" rel="noopener" class="float-btn telegram" aria-label="Telegram orqali bog'lanish">
+            <span class="tooltip">Telegram</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.479.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
